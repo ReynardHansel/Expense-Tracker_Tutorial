@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		566D3D012D9D374900516319 /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = 566D3D002D9D374900516319 /* SwiftUIFontIcon */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		56489ABF2D870B7A0042832B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				566D3D012D9D374900516319 /* SwiftUIFontIcon in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = "Expense Tracker (Tutorial)";
 			packageProductDependencies = (
+				566D3D002D9D374900516319 /* SwiftUIFontIcon */,
 			);
 			productName = "Expense Tracker (Tutorial)";
 			productReference = 56489AAE2D870B790042832B /* Expense Tracker (Tutorial).app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 56489AA52D870B790042832B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				566D3CE82D9C3EAA00516319 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 56489AAF2D870B790042832B /* Products */;
 			projectDirPath = "";
@@ -558,6 +567,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		566D3CE82D9C3EAA00516319 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huybuidac/SwiftUIFontIcon";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		566D3D002D9D374900516319 /* SwiftUIFontIcon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 566D3CE82D9C3EAA00516319 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */;
+			productName = SwiftUIFontIcon;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 56489AA62D870B790042832B /* Project object */;
 }

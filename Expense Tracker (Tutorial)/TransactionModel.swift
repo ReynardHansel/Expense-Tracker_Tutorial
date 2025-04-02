@@ -22,8 +22,14 @@ struct Transaction: Identifiable {
     var isExpense: Bool
     var isEdited: Bool
     
+    // Mark: Computed Properties
+    //* --> processes raw data from above to be served in the frontend/UI, so the processing is done here, not in the view/frontend
     var dateParsed: Date {
         date.dateParsed()
+    }
+    
+    var signedAmount: Double {
+        return type == TransactionType.credit.rawValue ? amount : -amount
     }
 }
 
